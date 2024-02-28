@@ -1,9 +1,9 @@
 function insert_Row() {
     //Write your code here
-let tabelbody=documentById("sampleTable")
-	let btn=document.querySelector('button')
+let tabelbody=document.getElementById("sampleTable")
+	let btn=document.querySelector('input')
 
-	btn.addEventListener('click',addrow)
+	btn.addEventListener('click',addRow)
 	function addRow() {
 		let row=tabelbody.insertRow(0)
 		row.insertCell(0).innerHTML="New Cell1"
